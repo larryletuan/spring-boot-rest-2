@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.bhaiti.kela.beans.Student;
-import com.bhaiti.kela.beans.StudentRegistration;
+import com.bhaiti.kela.beans.Employee;
+import com.bhaiti.kela.beans.EmployeeRegistration;
 
 @Controller
-public class StudentRetrieveController {
+public class RetrieveController {
 	
-	@RequestMapping(method = RequestMethod.GET, value="/allstudent")
+	@RequestMapping(method = RequestMethod.GET, value="/allemployee")
 
 	@ResponseBody
-	public List<Student> getStudent() {
-		return StudentRegistration.getInstance().getStudentRecords();
+	public List<Employee> getStudent() {
+		return EmployeeRegistration.getInstance().getStudentRecords();
 	}
 
 }

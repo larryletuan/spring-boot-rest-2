@@ -6,17 +6,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.bhaiti.kela.beans.StudentRegistration;
+import com.bhaiti.kela.beans.EmployeeRegistration;
 
 @Controller
-public class StudentDeleteController {
+public class DeleteController {
 	
-	@RequestMapping(method = RequestMethod.DELETE, value="/delete/student/{regdNum}")
+	@RequestMapping(method = RequestMethod.DELETE, value="/delete/employee/{regdNum}")
 	
 	@ResponseBody
 	public String deleteStudentRecord(@PathVariable("regdNum") String regdNum) {		
 		System.out.println("In deleteStudentRecord");	   
-	    return StudentRegistration.getInstance().deleteStudent(regdNum);		
+	    return EmployeeRegistration.getInstance().deleteStudent(regdNum);		
 	}	
 
 }

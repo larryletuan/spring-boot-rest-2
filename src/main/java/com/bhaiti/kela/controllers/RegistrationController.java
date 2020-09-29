@@ -11,23 +11,23 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.bhaiti.kela.beans.*;
 
 @Controller
-public class StudentRegistrationController {
+public class RegistrationController {
 	
-	@RequestMapping(method = RequestMethod.POST, value="/register/student")
+	@RequestMapping(method = RequestMethod.POST, value="/register/employee")
 
 	
 	@ResponseBody
-	StudentRegistrationReply registerStudent(@RequestBody Student student) {
+	RegistrationReply registerStudent(@RequestBody Employee employee) {
 		
 		System.out.println("In registerStudent");
-        StudentRegistrationReply stdregreply = new StudentRegistrationReply();           
+        RegistrationReply stdregreply = new RegistrationReply();           
 
-        StudentRegistration.getInstance().add(student);
+        EmployeeRegistration.getInstance().add(employee);
 
         //We are setting the below value just to reply a message back to the caller
-        stdregreply.setName(student.getName());
-        stdregreply.setAge(student.getAge());
-        stdregreply.setRegistrationNumber(student.getRegistrationNumber());
+        stdregreply.setName(employee.getName());
+        stdregreply.setAge(employee.getAge());
+        stdregreply.setRegistrationNumber(employee.getRegistrationNumber());
         stdregreply.setRegistrationStatus("Successful");
 
 

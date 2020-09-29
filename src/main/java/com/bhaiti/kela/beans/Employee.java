@@ -1,6 +1,6 @@
 package com.bhaiti.kela.beans;
 
-public class Student {
+public class Employee {
 	
 	String name;
 	int age;

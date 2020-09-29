@@ -1,6 +1,6 @@
 package com.bhaiti.kela.beans;
 
-public class StudentRegistrationReply {
+public class RegistrationReply {
 	
 	String name;
 	int age;
