@@ -13,7 +13,7 @@ import com.bhaiti.kela.beans.StudentRegistration;
 @Controller
 public class StudentRetrieveController {
 	
-	@RequestMapping(method = RequestMethod.GET, value="/student/allstudent")
+	@RequestMapping(method = RequestMethod.GET, value="/allstudent")
 
 	@ResponseBody
 	public List<Student> getStudent() {
