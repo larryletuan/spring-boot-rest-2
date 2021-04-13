@@ -5,6 +5,16 @@ public class Employee {
 	String name;
 	int age;
 	String registrationNumber;
+	String registrationStatus;
+	public String getRegistrationStatus() {
+		return registrationStatus;
+	}
+
+	public void setRegistrationStatus(String registrationStatus) {
+		this.registrationStatus = registrationStatus;
+	}
+
+
 	
 	public String getName() {
 		return name;
