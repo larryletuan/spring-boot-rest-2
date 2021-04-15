@@ -13,7 +13,7 @@ import com.bhaiti.kela.beans.EmployeeRegistration;
 @Controller
 public class RetrieveController {
 	
-	@RequestMapping(method = RequestMethod.GET, value="/laydanhsachNhanvien")
+	@RequestMapping(method = RequestMethod.GET, value="/getEmployee")
 
 	@ResponseBody
 	public List<Employee> getStudent() {
